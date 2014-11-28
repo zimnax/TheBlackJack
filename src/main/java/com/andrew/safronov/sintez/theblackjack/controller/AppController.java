@@ -12,14 +12,12 @@ import com.andrew.safronov.sintez.theblackjack.model.entity.User;
 @RequestMapping("/user")
 public class AppController {
 
-    @RequestMapping(value = "{name}", method = RequestMethod.GET)
-    public @ResponseBody User getShopInJSON() {
+	@RequestMapping(value = "{name}", method = RequestMethod.GET, produces = "application/json")
+	public @ResponseBody User getShopInJSON(@PathVariable String name) {
 
-        System.out.println("JORICK---------------------------LABAn");
-
-        User user = new User();
-        user.setName("Andrew");
-        return user;
-    }
+		User user = new User();
+		user.setName(name);
+		return user;
+	}
 
 }

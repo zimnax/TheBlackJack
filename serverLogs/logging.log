@@ -1,0 +1,657 @@
+2014-11-28 00:09:18 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 00:09:18 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@5d03462c] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.AppControllerTest@1f42269]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [application-context.xml]; nested exception is java.io.FileNotFoundException: class path resource [application-context.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:251)
+	at org.springframework.test.context.web.GenericXmlWebContextLoader.loadBeanDefinitions(GenericXmlWebContextLoader.java:38)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:125)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.io.FileNotFoundException: class path resource [application-context.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 37 more
+2014-11-28 00:10:19 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 00:10:19 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 00:10:19 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 00:10:19 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 00:10:19 MSK 2014]; root of context hierarchy
+2014-11-28 00:10:20 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 00:10:20 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 00:10:20 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 00:10:20 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 00:10:20 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 00:10:20 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 00:10:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 00:10:21 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 00:10:21 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 00:10:21 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 00:10:22 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 00:10:22 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 00:10:22 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 00:10:22 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 00:10:22 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 00:10:22 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 00:10:22 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 410 ms
+2014-11-28 00:10:22 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [/user/andew] in DispatcherServlet with name ''
+2014-11-28 00:10:22 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 00:10:19 MSK 2014]; root of context hierarchy
+2014-11-28 00:10:22 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 00:20:33 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@441626bf: startup date [Fri Nov 28 00:20:33 MSK 2014]; root of context hierarchy
+2014-11-28 00:20:33 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@122e2dc6] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.AppControllerTest@15bf2b7d]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testContext': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [org.springframework.test.context.TestContext]: No default constructor found; nested exception is java.lang.NoSuchMethodException: org.springframework.test.context.TestContext.<init>()
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1077)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1022)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:128)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [org.springframework.test.context.TestContext]: No default constructor found; nested exception is java.lang.NoSuchMethodException: org.springframework.test.context.TestContext.<init>()
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1070)
+	... 41 more
+Caused by: java.lang.NoSuchMethodException: org.springframework.test.context.TestContext.<init>()
+	at java.lang.Class.getConstructor0(Class.java:2892)
+	at java.lang.Class.getDeclaredConstructor(Class.java:2058)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:80)
+	... 42 more
+2014-11-28 00:20:49 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 00:20:49 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 00:20:49 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 00:20:49 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@63d446f3: startup date [Fri Nov 28 00:20:49 MSK 2014]; root of context hierarchy
+2014-11-28 00:20:50 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 00:20:50 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 00:20:50 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 00:20:50 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 00:20:50 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 00:20:50 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 00:20:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 00:20:51 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 00:20:51 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 00:20:51 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 00:20:51 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 00:20:51 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 00:20:51 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 00:20:51 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 00:20:51 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@63d446f3: startup date [Fri Nov 28 00:20:49 MSK 2014]; root of context hierarchy
+2014-11-28 00:20:51 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:28:11 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@281b4cff: startup date [Fri Nov 28 22:28:11 MSK 2014]; root of context hierarchy
+2014-11-28 22:28:11 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2eeb0945] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.AppControllerTest@48ada913]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testContext': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [org.springframework.test.context.TestContext]: No default constructor found; nested exception is java.lang.NoSuchMethodException: org.springframework.test.context.TestContext.<init>()
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1077)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1022)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:128)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [org.springframework.test.context.TestContext]: No default constructor found; nested exception is java.lang.NoSuchMethodException: org.springframework.test.context.TestContext.<init>()
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1070)
+	... 41 more
+Caused by: java.lang.NoSuchMethodException: org.springframework.test.context.TestContext.<init>()
+	at java.lang.Class.getConstructor0(Class.java:2892)
+	at java.lang.Class.getDeclaredConstructor(Class.java:2058)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:80)
+	... 42 more
+2014-11-28 22:28:25 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:28:25 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 22:28:26 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:28:26 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@49271218: startup date [Fri Nov 28 22:28:26 MSK 2014]; root of context hierarchy
+2014-11-28 22:28:26 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:28:26 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:28:26 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:28:26 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:28:26 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:28:26 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:28:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:28:27 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:28:27 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:28:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:28:27 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:28:27 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:28:27 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:28:27 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:28:27 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:28:27 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:28:28 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 316 ms
+2014-11-28 22:28:28 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [/user/andew] in DispatcherServlet with name ''
+2014-11-28 22:28:28 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@49271218: startup date [Fri Nov 28 22:28:26 MSK 2014]; root of context hierarchy
+2014-11-28 22:28:28 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:29:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:29:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 22:29:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:29:01 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 22:29:01 MSK 2014]; root of context hierarchy
+2014-11-28 22:29:02 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:29:02 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:29:02 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:29:02 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:29:02 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:29:02 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:29:02 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:29:03 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:29:03 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:29:03 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:29:03 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:29:03 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:29:03 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:29:03 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:29:03 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:29:03 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:29:03 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 302 ms
+2014-11-28 22:29:03 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [/user/andew] in DispatcherServlet with name ''
+2014-11-28 22:29:04 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 22:29:01 MSK 2014]; root of context hierarchy
+2014-11-28 22:29:04 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:29:21 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:29:21 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 22:29:21 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:29:21 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@52e99642: startup date [Fri Nov 28 22:29:21 MSK 2014]; root of context hierarchy
+2014-11-28 22:29:22 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:29:22 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:29:22 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:29:22 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:29:22 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:29:22 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:29:22 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:29:23 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:29:23 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:29:23 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:29:23 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:29:23 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:29:23 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:29:23 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:29:23 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:29:23 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:29:24 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 313 ms
+2014-11-28 22:29:24 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [theblackjack/user/andew] in DispatcherServlet with name ''
+2014-11-28 22:29:24 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@52e99642: startup date [Fri Nov 28 22:29:21 MSK 2014]; root of context hierarchy
+2014-11-28 22:29:24 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:29:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:29:34 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 22:29:34 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:29:34 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 22:29:34 MSK 2014]; root of context hierarchy
+2014-11-28 22:29:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:29:34 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:29:34 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:29:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:29:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:29:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:29:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:29:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:29:35 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:29:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:29:35 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:29:35 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:29:35 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:29:35 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:29:36 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:29:36 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:29:36 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 312 ms
+2014-11-28 22:29:36 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [/theblackjack/user/andew] in DispatcherServlet with name ''
+2014-11-28 22:29:36 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 22:29:34 MSK 2014]; root of context hierarchy
+2014-11-28 22:29:36 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:29:51 INFO  Server:272 - jetty-8.1.16.v20140903
+2014-11-28 22:29:53 INFO  /:2040 - Initializing Spring root WebApplicationContext
+2014-11-28 22:29:53 INFO  ContextLoader:273 - Root WebApplicationContext: initialization started
+2014-11-28 22:29:54 INFO  XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Fri Nov 28 22:29:54 MSK 2014]; root of context hierarchy
+2014-11-28 22:29:54 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/application-context.xml]
+2014-11-28 22:29:54 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-JPA.xml]
+2014-11-28 22:29:55 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/datasource.xml]
+2014-11-28 22:29:55 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:29:55 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:29:55 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:29:55 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:29:55 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:29:55 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:29:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:29:56 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:29:57 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:29:57 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:29:57 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:29:57 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:29:57 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:29:57 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:29:57 INFO  ContextLoader:313 - Root WebApplicationContext: initialization completed in 3550 ms
+2014-11-28 22:29:58 INFO  /:2040 - Initializing Spring FrameworkServlet 'Spring MVC Dispatcher Servlet'
+2014-11-28 22:29:58 INFO  DispatcherServlet:454 - FrameworkServlet 'Spring MVC Dispatcher Servlet': initialization started
+2014-11-28 22:29:58 INFO  XmlWebApplicationContext:510 - Refreshing WebApplicationContext for namespace 'Spring MVC Dispatcher Servlet-servlet': startup date [Fri Nov 28 22:29:58 MSK 2014]; parent: Root WebApplicationContext
+2014-11-28 22:29:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/web-context.xml]
+2014-11-28 22:30:05 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 22:30:06 INFO  DispatcherServlet:473 - FrameworkServlet 'Spring MVC Dispatcher Servlet': initialization completed in 7863 ms
+2014-11-28 22:30:06 WARN  RequestLogHandler:162 - !RequestLog
+2014-11-28 22:30:07 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:8084
+2014-11-28 22:30:54 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'Spring MVC Dispatcher Servlet'
+2014-11-28 22:32:53 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:32:53 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 22:32:53 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:32:53 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@40055f9f: startup date [Fri Nov 28 22:32:53 MSK 2014]; root of context hierarchy
+2014-11-28 22:32:53 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:32:54 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:32:54 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:32:54 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:32:54 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:32:54 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:32:54 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:32:55 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:32:55 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:32:55 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:32:55 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:32:55 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:32:55 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:32:55 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:32:55 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:32:55 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:32:56 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 292 ms
+2014-11-28 22:32:56 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [/user/andew] in DispatcherServlet with name ''
+2014-11-28 22:32:56 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@40055f9f: startup date [Fri Nov 28 22:32:53 MSK 2014]; root of context hierarchy
+2014-11-28 22:32:56 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:41:00 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:41:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 22:41:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:41:01 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6587f194: startup date [Fri Nov 28 22:41:01 MSK 2014]; root of context hierarchy
+2014-11-28 22:41:01 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:41:01 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:41:01 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:41:02 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:41:02 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:41:02 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:41:02 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:41:02 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:41:02 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:41:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:41:03 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:41:03 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:41:03 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:41:03 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:41:03 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:41:03 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:41:03 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 347 ms
+2014-11-28 22:41:03 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [/user/andew] in DispatcherServlet with name ''
+2014-11-28 22:41:03 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@6587f194: startup date [Fri Nov 28 22:41:01 MSK 2014]; root of context hierarchy
+2014-11-28 22:41:03 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:41:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:41:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 22:41:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:41:16 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@43d0f0e: startup date [Fri Nov 28 22:41:16 MSK 2014]; root of context hierarchy
+2014-11-28 22:41:17 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:41:17 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:41:17 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:41:17 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:41:17 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:41:17 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:41:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:41:18 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:41:18 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:41:18 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:41:18 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:41:18 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:41:18 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:41:18 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:41:18 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:41:18 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:41:19 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 314 ms
+2014-11-28 22:41:19 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [/user/andew] in DispatcherServlet with name ''
+2014-11-28 22:41:19 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@43d0f0e: startup date [Fri Nov 28 22:41:16 MSK 2014]; root of context hierarchy
+2014-11-28 22:41:19 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:41:30 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:41:30 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 22:41:31 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:41:31 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@52e99642: startup date [Fri Nov 28 22:41:31 MSK 2014]; root of context hierarchy
+2014-11-28 22:41:31 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:41:31 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:41:31 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 22:41:31 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 22:41:31 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 22:41:31 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 22:41:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 22:41:32 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 22:41:32 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 22:41:32 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 22:41:32 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2014-11-28 22:41:32 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2014-11-28 22:41:32 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2014-11-28 22:41:32 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2014-11-28 22:41:33 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:41:33 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:41:33 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 298 ms
+2014-11-28 22:41:33 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [user/andew] in DispatcherServlet with name ''
+2014-11-28 22:41:33 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@52e99642: startup date [Fri Nov 28 22:41:31 MSK 2014]; root of context hierarchy
+2014-11-28 22:41:33 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 22:42:31 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:42:31 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from URL [file:/E:/workspaces/GITrepo/TheBlackJack/target/classes/spring-JPA.xml]
+2014-11-28 22:42:31 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@a29626e] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.AppControllerTest@22fd28f8]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from relative location [spring-JPA.xml]
+Offending resource: class path resource [application-context.xml]; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [file:/E:/workspaces/GITrepo/TheBlackJack/target/classes/spring-JPA.xml]; nested exception is java.io.FileNotFoundException: E:\workspaces\GITrepo\TheBlackJack\target\classes\spring-JPA.xml (Не удается найти указанный файл)
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:70)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:274)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:199)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:141)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:110)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:508)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:251)
+	at org.springframework.test.context.web.GenericXmlWebContextLoader.loadBeanDefinitions(GenericXmlWebContextLoader.java:38)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:125)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [file:/E:/workspaces/GITrepo/TheBlackJack/target/classes/spring-JPA.xml]; nested exception is java.io.FileNotFoundException: E:\workspaces\GITrepo\TheBlackJack\target\classes\spring-JPA.xml (Не удается найти указанный файл)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:263)
+	... 44 more
+Caused by: java.io.FileNotFoundException: E:\workspaces\GITrepo\TheBlackJack\target\classes\spring-JPA.xml (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:168)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 48 more
+2014-11-28 22:42:48 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:42:48 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:42:48 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@640edd19: startup date [Fri Nov 28 22:42:48 MSK 2014]; root of context hierarchy
+2014-11-28 22:42:48 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:42:49 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:42:49 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:42:49 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 345 ms
+2014-11-28 22:42:49 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [user/andew] in DispatcherServlet with name ''
+2014-11-28 22:42:49 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@640edd19: startup date [Fri Nov 28 22:42:48 MSK 2014]; root of context hierarchy
+2014-11-28 22:48:35 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:48:35 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:48:35 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@252119: startup date [Fri Nov 28 22:48:35 MSK 2014]; root of context hierarchy
+2014-11-28 22:48:35 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:48:36 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 22:48:37 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:48:37 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:48:37 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 2 ms
+2014-11-28 22:48:37 WARN  PageNotFound:1108 - No mapping found for HTTP request with URI [user/andew] in DispatcherServlet with name ''
+2014-11-28 22:48:37 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@252119: startup date [Fri Nov 28 22:48:35 MSK 2014]; root of context hierarchy
+2014-11-28 22:48:51 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:48:51 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:48:51 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@640edd19: startup date [Fri Nov 28 22:48:51 MSK 2014]; root of context hierarchy
+2014-11-28 22:48:51 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:48:51 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 22:48:52 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:48:52 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:48:52 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 22:48:52 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@640edd19: startup date [Fri Nov 28 22:48:51 MSK 2014]; root of context hierarchy
+2014-11-28 22:49:45 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:49:45 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:49:45 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1ab0e84b: startup date [Fri Nov 28 22:49:45 MSK 2014]; root of context hierarchy
+2014-11-28 22:49:46 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:49:46 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 22:49:47 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:49:47 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:49:47 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 22:49:47 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@1ab0e84b: startup date [Fri Nov 28 22:49:45 MSK 2014]; root of context hierarchy
+2014-11-28 22:50:03 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:50:03 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:50:03 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3dcf46c2: startup date [Fri Nov 28 22:50:03 MSK 2014]; root of context hierarchy
+2014-11-28 22:50:03 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:50:04 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 22:50:04 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:50:04 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:50:04 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 2 ms
+2014-11-28 22:50:05 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@3dcf46c2: startup date [Fri Nov 28 22:50:03 MSK 2014]; root of context hierarchy
+2014-11-28 22:52:03 INFO  TestContext:104 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.andrew.safronov.sintez.theblackjack.controller.AppControllerTest]
+2014-11-28 22:52:03 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41258eb3] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.AppControllerTest@8bbab2f]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.IllegalArgumentException: Cannot load an ApplicationContext with a NULL 'contextLoader'. Consider annotating your test class with @ContextConfiguration or @ContextHierarchy.
+	at org.springframework.util.Assert.notNull(Assert.java:112)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:57)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+2014-11-28 22:52:13 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:52:14 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:52:14 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31c74456: startup date [Fri Nov 28 22:52:14 MSK 2014]; root of context hierarchy
+2014-11-28 22:52:14 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:52:14 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 22:52:15 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:52:15 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:52:15 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 22:52:15 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@31c74456: startup date [Fri Nov 28 22:52:14 MSK 2014]; root of context hierarchy
+2014-11-28 22:55:40 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:55:40 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:55:41 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 22:55:41 MSK 2014]; root of context hierarchy
+2014-11-28 22:55:41 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:55:41 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 22:55:42 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:55:42 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:55:42 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 22:55:42 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 22:55:41 MSK 2014]; root of context hierarchy
+2014-11-28 22:56:20 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 22:56:20 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 22:56:20 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 22:56:20 MSK 2014]; root of context hierarchy
+2014-11-28 22:56:20 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 22:56:20 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 22:56:21 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 22:56:21 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 22:56:21 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 22:56:21 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 22:56:20 MSK 2014]; root of context hierarchy
+2014-11-28 23:01:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 23:01:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 23:01:33 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@40055f9f: startup date [Fri Nov 28 23:01:33 MSK 2014]; root of context hierarchy
+2014-11-28 23:01:33 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 23:01:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON()
+2014-11-28 23:01:34 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 23:01:34 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 23:01:34 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 23:01:35 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@40055f9f: startup date [Fri Nov 28 23:01:33 MSK 2014]; root of context hierarchy
+2014-11-28 23:05:44 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 23:05:45 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 23:05:45 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@52e99642: startup date [Fri Nov 28 23:05:45 MSK 2014]; root of context hierarchy
+2014-11-28 23:05:45 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 23:05:45 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON(java.lang.String)
+2014-11-28 23:05:46 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 23:05:46 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 23:05:46 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 23:05:46 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@52e99642: startup date [Fri Nov 28 23:05:45 MSK 2014]; root of context hierarchy
+2014-11-28 23:08:10 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 23:08:10 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 23:08:10 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 23:08:10 MSK 2014]; root of context hierarchy
+2014-11-28 23:08:10 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 23:08:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.model.entity.User com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON(java.lang.String)
+2014-11-28 23:08:11 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 23:08:11 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 23:08:11 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 23:08:11 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@8830993: startup date [Fri Nov 28 23:08:10 MSK 2014]; root of context hierarchy

@@ -13,7 +13,7 @@
 
 	<!-- Scans the classpath of the application for @Components to deploy as 
 		beans -->
-	<context:component-scan base-package="com.andrew.safronov.sintez.theblackjack" />
+	<context:component-scan base-package="com.andrew.safronov.sintez.theblackjack.controller" />
 	<jpa:repositories base-package="com.andrew.safronov.sintez.theblackjack"
 		entity-manager-factory-ref="Emf" />
 
