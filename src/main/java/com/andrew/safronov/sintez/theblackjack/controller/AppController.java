@@ -6,18 +6,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.andrew.safronov.sintez.theblackjack.model.entity.User;
+import com.andrew.safronov.sintez.theblackjack.entity.Purse;
 
 @Controller
 @RequestMapping("/user")
 public class AppController {
 
-	@RequestMapping(value = "{name}", method = RequestMethod.GET, produces = "application/json")
-	public @ResponseBody User getShopInJSON(@PathVariable String name) {
+    @RequestMapping(value = "{name}", method = RequestMethod.GET, produces = "application/json")
+    public @ResponseBody Purse getShopInJSON(@PathVariable String name) {
 
-		User user = new User();
-		user.setName(name);
-		return user;
-	}
+        Purse purse = new Purse();
+        purse.setBalance(100);
+        return purse;
+    }
 
 }

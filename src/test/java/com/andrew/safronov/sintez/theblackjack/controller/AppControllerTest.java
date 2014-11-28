@@ -19,7 +19,7 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:application-context.xml")
+@ContextConfiguration("classpath:test-application-context.xml")
 @WebAppConfiguration
 public class AppControllerTest {
 
@@ -38,8 +38,7 @@ public class AppControllerTest {
 		ResultActions results = mockMvc.perform(getRequest);
 		results.andExpect(status().isOk());
 		results.andExpect(content().contentType(MediaType.APPLICATION_JSON));
-		results.andExpect(jsonPath("$.name").value("sintez"));
-
+		results.andExpect(jsonPath("$.balance").value(100));
 	}
 
 }
