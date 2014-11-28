@@ -11,6 +11,8 @@ import com.andrew.safronov.sintez.theblackjack.entity.Purse;
 @Controller
 @RequestMapping("/user")
 public class AppController {
+    
+    
 
     @RequestMapping(value = "{name}", method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody Purse getShopInJSON(@PathVariable String name) {

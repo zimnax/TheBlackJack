@@ -5897,3 +5897,1105 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2014-11-28 17:11:57 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2014-11-28 17:11:57 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
 2014-11-28 17:11:58 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:43:43 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:43:44 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:43:44 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6893f0c6: startup date [Fri Nov 28 17:43:44 EET 2014]; root of context hierarchy
+2014-11-28 17:43:44 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:43:44 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:43:44 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:43:44 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:43:44 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:43:44 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:43:44 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:43:45 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:43:45 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:43:45 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:43:45 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:43:45 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON(java.lang.String)
+2014-11-28 17:43:46 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:43:46 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:43:46 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 17:43:46 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@6893f0c6: startup date [Fri Nov 28 17:43:44 EET 2014]; root of context hierarchy
+2014-11-28 17:43:46 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:43:46 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:43:46 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:47:07 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 17:47:07 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 17:47:07 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 17:47:07 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [web-context.xml]
+2014-11-28 17:47:07 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5ab5b91: startup date [Fri Nov 28 17:47:07 EET 2014]; root of context hierarchy
+2014-11-28 17:47:07 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 17:47:07 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:47:08 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:47:08 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:47:08 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:47:08 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:47:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:47:08 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 17:47:08 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 17:47:08 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:47:09 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:47:09 ERROR SchemaExport:425 - HHH000389: Unsuccessful: drop sequence hibernate_sequence
+2014-11-28 17:47:09 ERROR SchemaExport:426 - ERROR: sequence "hibernate_sequence" does not exist
+2014-11-28 17:47:09 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:47:09 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON(java.lang.String)
+2014-11-28 17:47:09 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:47:09 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:47:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:47:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:47:10 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:47:10 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:47:10 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 17:47:10 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 17:47:10 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5ab5b91: startup date [Fri Nov 28 17:47:07 EET 2014]; root of context hierarchy
+2014-11-28 17:47:10 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:47:10 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:47:10 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:47:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 17:47:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 17:47:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 17:47:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [web-context.xml]
+2014-11-28 17:47:28 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1226ad0a: startup date [Fri Nov 28 17:47:28 EET 2014]; root of context hierarchy
+2014-11-28 17:47:29 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 17:47:29 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:47:29 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:47:29 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:47:29 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:47:29 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:47:29 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:47:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 17:47:29 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 17:47:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:47:30 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:47:30 ERROR SchemaExport:425 - HHH000389: Unsuccessful: drop sequence hibernate_sequence
+2014-11-28 17:47:30 ERROR SchemaExport:426 - ERROR: sequence "hibernate_sequence" does not exist
+2014-11-28 17:47:30 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:47:30 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON(java.lang.String)
+2014-11-28 17:47:30 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:47:30 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:47:31 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:47:31 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:47:31 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:47:31 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:47:31 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 17:47:31 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@1226ad0a: startup date [Fri Nov 28 17:47:28 EET 2014]; root of context hierarchy
+2014-11-28 17:47:31 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:47:31 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:47:31 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:47:42 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 17:47:42 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [spring-JPA.xml]
+2014-11-28 17:47:42 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [datasource.xml]
+2014-11-28 17:47:43 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [web-context.xml]
+2014-11-28 17:47:43 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21b56b0b: startup date [Fri Nov 28 17:47:43 EET 2014]; root of context hierarchy
+2014-11-28 17:47:43 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.postgresql.Driver
+2014-11-28 17:47:43 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:47:43 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:47:43 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:47:43 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:47:43 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:47:44 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:47:44 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-11-28 17:47:44 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-11-28 17:47:44 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:47:44 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:47:44 ERROR SchemaExport:425 - HHH000389: Unsuccessful: drop sequence hibernate_sequence
+2014-11-28 17:47:44 ERROR SchemaExport:426 - ERROR: sequence "hibernate_sequence" does not exist
+2014-11-28 17:47:45 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:47:45 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/user/{name}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.AppController.getShopInJSON(java.lang.String)
+2014-11-28 17:47:45 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:47:45 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:47:45 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:47:45 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:47:45 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:47:45 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:47:45 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 2 ms
+2014-11-28 17:47:45 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 17:47:46 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@21b56b0b: startup date [Fri Nov 28 17:47:43 EET 2014]; root of context hierarchy
+2014-11-28 17:47:46 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:47:46 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:47:46 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:51:29 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [application-context.xml]
+2014-11-28 17:51:29 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@408f3be4] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@7ba516d8]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [application-context.xml]; nested exception is java.io.FileNotFoundException: class path resource [application-context.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:251)
+	at org.springframework.test.context.web.GenericXmlWebContextLoader.loadBeanDefinitions(GenericXmlWebContextLoader.java:38)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:125)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.io.FileNotFoundException: class path resource [application-context.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 37 more
+2014-11-28 17:51:44 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:51:44 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:51:44 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62aa2650: startup date [Fri Nov 28 17:51:44 EET 2014]; root of context hierarchy
+2014-11-28 17:51:44 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:51:45 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:51:45 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:51:45 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:51:45 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:51:45 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:51:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:51:45 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:51:45 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:51:45 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:51:45 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:51:46 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:51:46 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:51:46 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:51:46 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:51:46 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 17:51:46 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 17:51:46 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@62aa2650: startup date [Fri Nov 28 17:51:44 EET 2014]; root of context hierarchy
+2014-11-28 17:51:46 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:51:46 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:51:46 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:52:18 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:52:19 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:52:19 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62aa2650: startup date [Fri Nov 28 17:52:19 EET 2014]; root of context hierarchy
+2014-11-28 17:52:19 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:52:19 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:52:19 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:52:19 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:52:19 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:52:19 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:52:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:52:19 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:52:20 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:52:20 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:52:20 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:52:20 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:52:20 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:52:21 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:52:21 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:52:21 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 17:52:21 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 17:52:21 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@62aa2650: startup date [Fri Nov 28 17:52:19 EET 2014]; root of context hierarchy
+2014-11-28 17:52:21 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:52:21 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:52:21 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:52:56 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:52:56 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:52:56 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62aa2650: startup date [Fri Nov 28 17:52:56 EET 2014]; root of context hierarchy
+2014-11-28 17:52:56 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:52:56 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:52:56 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:52:56 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:52:56 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:52:56 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:52:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:52:57 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:52:57 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:52:57 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:52:57 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:52:58 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:52:58 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:52:58 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:52:58 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:52:58 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 17:52:58 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 17:52:58 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@62aa2650: startup date [Fri Nov 28 17:52:56 EET 2014]; root of context hierarchy
+2014-11-28 17:52:58 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:52:58 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:52:58 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:54:40 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:54:40 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:54:40 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62aa2650: startup date [Fri Nov 28 17:54:40 EET 2014]; root of context hierarchy
+2014-11-28 17:54:40 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:54:41 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:54:41 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:54:41 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:54:41 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:54:41 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:54:41 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:54:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:54:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:54:41 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:54:42 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:54:42 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:54:42 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:54:42 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:54:42 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:54:42 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 17:54:42 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 17:54:42 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@62aa2650: startup date [Fri Nov 28 17:54:40 EET 2014]; root of context hierarchy
+2014-11-28 17:54:42 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:54:42 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:54:42 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:56:02 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:56:02 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:56:02 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@58911b9f: startup date [Fri Nov 28 17:56:02 EET 2014]; root of context hierarchy
+2014-11-28 17:56:03 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:56:03 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:56:03 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:56:03 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:56:03 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:56:03 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:56:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:56:03 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:56:03 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:56:04 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:56:04 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:56:04 INFO  TransactionalTestExecutionListener:279 - Began transaction (1): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@1ce00c07]; rollback [true]
+2014-11-28 17:56:04 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:56:04 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:56:05 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:56:05 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:56:05 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 17:56:05 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 17:56:05 INFO  TransactionalTestExecutionListener:299 - Rolled back transaction after test execution for test context [TestContext@1f8180df testClass = PlayerControllerTest, testInstance = com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@6f33c0a1, testMethod = registerDefaultPlayer@PlayerControllerTest, testException = org.springframework.dao.InvalidDataAccessApiUsageException: Bean object must not be null; nested exception is java.lang.IllegalArgumentException: Bean object must not be null, mergedContextConfiguration = [WebMergedContextConfiguration@2eabc310 testClass = PlayerControllerTest, locations = '{classpath:test-application-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+2014-11-28 17:56:05 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@58911b9f: startup date [Fri Nov 28 17:56:02 EET 2014]; root of context hierarchy
+2014-11-28 17:56:05 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:56:05 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:56:05 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:56:15 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:56:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:56:16 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7dfa0e30: startup date [Fri Nov 28 17:56:16 EET 2014]; root of context hierarchy
+2014-11-28 17:56:16 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:56:16 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:56:16 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:56:16 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:56:16 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:56:16 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:56:16 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:56:16 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:56:17 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:56:17 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:56:17 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:56:17 INFO  TransactionalTestExecutionListener:279 - Began transaction (1): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@49992f2e]; rollback [true]
+2014-11-28 17:56:17 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:56:17 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:56:18 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:56:18 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:56:18 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 17:56:18 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 17:56:18 INFO  TransactionalTestExecutionListener:299 - Rolled back transaction after test execution for test context [TestContext@3d3df9d8 testClass = PlayerControllerTest, testInstance = com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@2fddf351, testMethod = registerDefaultPlayer@PlayerControllerTest, testException = org.springframework.dao.InvalidDataAccessApiUsageException: Bean object must not be null; nested exception is java.lang.IllegalArgumentException: Bean object must not be null, mergedContextConfiguration = [WebMergedContextConfiguration@14916364 testClass = PlayerControllerTest, locations = '{classpath:test-application-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+2014-11-28 17:56:18 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@7dfa0e30: startup date [Fri Nov 28 17:56:16 EET 2014]; root of context hierarchy
+2014-11-28 17:56:18 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:56:18 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:56:18 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:57:30 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:57:30 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:57:30 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1eac9126: startup date [Fri Nov 28 17:57:30 EET 2014]; root of context hierarchy
+2014-11-28 17:57:31 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:57:31 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:57:31 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:57:31 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:57:31 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:57:31 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:57:31 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:57:31 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:57:31 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:57:32 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:57:32 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:57:32 INFO  TransactionalTestExecutionListener:279 - Began transaction (1): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@67e89ac1]; rollback [true]
+2014-11-28 17:57:32 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:57:32 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:57:32 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:57:32 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:57:32 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 17:57:32 INFO  TransactionalTestExecutionListener:299 - Rolled back transaction after test execution for test context [TestContext@4e3f721f testClass = PlayerControllerTest, testInstance = com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@275d795b, testMethod = registerDefaultPlayer@PlayerControllerTest, testException = org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.impl.PurseServiceImpl] is defined, mergedContextConfiguration = [WebMergedContextConfiguration@69ca598d testClass = PlayerControllerTest, locations = '{classpath:test-application-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+2014-11-28 17:57:32 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@1eac9126: startup date [Fri Nov 28 17:57:30 EET 2014]; root of context hierarchy
+2014-11-28 17:57:32 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:57:32 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:57:32 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:58:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:58:34 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:58:34 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@58911b9f: startup date [Fri Nov 28 17:58:34 EET 2014]; root of context hierarchy
+2014-11-28 17:58:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:58:34 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:58:34 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:58:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:58:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:58:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:58:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:58:34 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:58:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:58:35 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:58:35 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:58:35 INFO  TransactionalTestExecutionListener:279 - Began transaction (1): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3935ae60]; rollback [true]
+2014-11-28 17:58:35 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:58:35 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:58:36 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:58:36 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:58:36 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 17:58:36 INFO  PurseServiceImpl:22 - Start to register new purse
+2014-11-28 17:58:36 INFO  TransactionalTestExecutionListener:299 - Rolled back transaction after test execution for test context [TestContext@1f8180df testClass = PlayerControllerTest, testInstance = com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@6f33c0a1, testMethod = registerDefaultPlayer@PlayerControllerTest, testException = org.springframework.dao.InvalidDataAccessApiUsageException: Bean object must not be null; nested exception is java.lang.IllegalArgumentException: Bean object must not be null, mergedContextConfiguration = [WebMergedContextConfiguration@2eabc310 testClass = PlayerControllerTest, locations = '{classpath:test-application-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+2014-11-28 17:58:36 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@58911b9f: startup date [Fri Nov 28 17:58:34 EET 2014]; root of context hierarchy
+2014-11-28 17:58:36 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:58:36 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:58:36 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:58:48 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 17:58:48 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 17:58:48 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@536d6585: startup date [Fri Nov 28 17:58:48 EET 2014]; root of context hierarchy
+2014-11-28 17:58:49 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 17:58:49 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:58:49 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 17:58:49 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 17:58:49 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 17:58:49 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 17:58:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 17:58:49 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 17:58:49 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 17:58:50 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:58:50 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 17:58:50 INFO  TransactionalTestExecutionListener:279 - Began transaction (1): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@1af48a1f]; rollback [true]
+2014-11-28 17:58:50 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 17:58:50 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 17:58:50 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 17:58:50 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 17:58:50 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 17:58:50 INFO  PurseServiceImpl:22 - Start to register new purse
+2014-11-28 17:58:50 INFO  TransactionalTestExecutionListener:299 - Rolled back transaction after test execution for test context [TestContext@28fb09fc testClass = PlayerControllerTest, testInstance = com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@794c9468, testMethod = registerDefaultPlayer@PlayerControllerTest, testException = org.springframework.dao.InvalidDataAccessApiUsageException: Bean object must not be null; nested exception is java.lang.IllegalArgumentException: Bean object must not be null, mergedContextConfiguration = [WebMergedContextConfiguration@12a3760f testClass = PlayerControllerTest, locations = '{classpath:test-application-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+2014-11-28 17:58:50 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@536d6585: startup date [Fri Nov 28 17:58:48 EET 2014]; root of context hierarchy
+2014-11-28 17:58:50 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 17:58:50 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 17:58:51 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:04:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:04:02 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:04:02 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@b240236: startup date [Fri Nov 28 18:04:02 EET 2014]; root of context hierarchy
+2014-11-28 18:04:02 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:04:02 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:04:02 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:04:02 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:04:02 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:04:02 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:04:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:04:03 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:04:03 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:04:03 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:04:03 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:04:04 INFO  TransactionalTestExecutionListener:279 - Began transaction (1): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@169cfde2]; rollback [true]
+2014-11-28 18:04:04 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:04:04 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:04:04 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:04:04 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:04:04 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 18:04:04 INFO  PurseServiceImpl:22 - Start to register new purse
+2014-11-28 18:04:04 INFO  TransactionalTestExecutionListener:299 - Rolled back transaction after test execution for test context [TestContext@12a3760f testClass = PlayerControllerTest, testInstance = com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@299bdc58, testMethod = registerDefaultPlayer@PlayerControllerTest, testException = org.springframework.dao.InvalidDataAccessApiUsageException: Bean object must not be null; nested exception is java.lang.IllegalArgumentException: Bean object must not be null, mergedContextConfiguration = [WebMergedContextConfiguration@379f2abf testClass = PlayerControllerTest, locations = '{classpath:test-application-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+2014-11-28 18:04:04 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@b240236: startup date [Fri Nov 28 18:04:02 EET 2014]; root of context hierarchy
+2014-11-28 18:04:04 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:04:04 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:04:04 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:07:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:07:34 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:07:34 INFO  GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@329b0985: startup date [Fri Nov 28 18:07:34 EET 2014]; root of context hierarchy
+2014-11-28 18:07:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:07:34 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:07:34 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:07:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:07:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:07:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:07:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:07:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:07:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:07:35 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:07:35 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:07:36 INFO  GenericApplicationContext:1042 - Closing org.springframework.context.support.GenericApplicationContext@329b0985: startup date [Fri Nov 28 18:07:34 EET 2014]; root of context hierarchy
+2014-11-28 18:07:36 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:07:36 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:07:36 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:09:06 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:09:07 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:09:07 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@292a74d5: startup date [Fri Nov 28 18:09:07 EET 2014]; root of context hierarchy
+2014-11-28 18:09:07 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:09:07 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:09:07 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:09:07 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:09:07 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:09:07 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:09:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:09:08 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:09:08 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:09:08 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:09:08 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:09:09 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:09:09 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:09:09 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:09:09 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:09:09 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 18:09:09 INFO  PlayerController:30 - Ititialize new 'DEFAULT' user in system with balance = 100
+2014-11-28 18:09:09 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@292a74d5: startup date [Fri Nov 28 18:09:07 EET 2014]; root of context hierarchy
+2014-11-28 18:09:09 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:09:09 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:09:09 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:09:45 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:09:45 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:09:45 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@292a74d5: startup date [Fri Nov 28 18:09:45 EET 2014]; root of context hierarchy
+2014-11-28 18:09:45 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:09:45 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:09:45 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:09:46 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:09:46 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:09:46 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:09:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:09:46 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:09:46 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:09:46 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:09:46 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:09:47 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:09:47 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:09:47 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:09:47 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:09:47 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 18:09:47 INFO  PlayerController:30 - Ititialize new 'DEFAULT' user in system with balance = 100
+2014-11-28 18:09:47 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@292a74d5: startup date [Fri Nov 28 18:09:45 EET 2014]; root of context hierarchy
+2014-11-28 18:09:47 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:09:47 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:09:47 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:10:57 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:10:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:10:58 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@292a74d5: startup date [Fri Nov 28 18:10:58 EET 2014]; root of context hierarchy
+2014-11-28 18:10:58 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:10:58 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:10:58 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:10:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:10:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:10:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:10:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:10:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:10:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:10:59 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:10:59 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:11:00 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:11:00 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:11:00 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:11:00 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:11:00 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 18:11:00 INFO  PlayerController:28 - Ititialize new 'DEFAULT' user in system with balance = 100
+2014-11-28 18:11:00 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@292a74d5: startup date [Fri Nov 28 18:10:58 EET 2014]; root of context hierarchy
+2014-11-28 18:11:00 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:11:00 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:11:00 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:15:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:15:28 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:15:28 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2deb9dd5: startup date [Fri Nov 28 18:15:28 EET 2014]; root of context hierarchy
+2014-11-28 18:15:28 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:15:29 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:15:29 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:15:29 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:15:29 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:15:29 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:15:29 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:15:29 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:15:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:15:29 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:15:29 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:15:30 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:15:30 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:15:30 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:15:30 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7a128460] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@55b0f93c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'playerController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: purseServiceImpl,com.andrew.safronov.sintez.theblackjack.controller.PurseMockService#0
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:128)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: purseServiceImpl,com.andrew.safronov.sintez.theblackjack.controller.PurseMockService#0
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:290)
+	... 41 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: purseServiceImpl,com.andrew.safronov.sintez.theblackjack.controller.PurseMockService#0
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:974)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:481)
+	... 43 more
+2014-11-28 18:16:33 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:16:34 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:16:34 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2deb9dd5: startup date [Fri Nov 28 18:16:34 EET 2014]; root of context hierarchy
+2014-11-28 18:16:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:16:34 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:16:34 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:16:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:16:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:16:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:16:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:16:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:16:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:16:35 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:16:35 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:16:35 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:16:35 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:16:36 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:16:36 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@582bc179] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@20ab1c28]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'playerController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: purseMockService,purseServiceImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:128)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: purseMockService,purseServiceImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:290)
+	... 41 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: purseMockService,purseServiceImpl
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:974)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:481)
+	... 43 more
+2014-11-28 18:17:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:17:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:17:58 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4504f60c: startup date [Fri Nov 28 18:17:58 EET 2014]; root of context hierarchy
+2014-11-28 18:17:58 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:17:58 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:17:58 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:17:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:17:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:17:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:17:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:17:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:17:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:17:59 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:17:59 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:18:00 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:18:00 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:18:00 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:18:00 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41c596d9] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@1332a24b]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'playerController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: testPurse,purseServiceImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:128)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: testPurse,purseServiceImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:290)
+	... 41 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: testPurse,purseServiceImpl
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:974)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:481)
+	... 43 more
+2014-11-28 18:19:10 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:19:10 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:19:10 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@48b5b13a: startup date [Fri Nov 28 18:19:10 EET 2014]; root of context hierarchy
+2014-11-28 18:19:10 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:19:11 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:19:11 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:19:11 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:19:11 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:19:11 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:19:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:19:11 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:19:11 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:19:11 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:19:11 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:19:12 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:19:12 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:19:12 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:19:12 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@55b0f93c] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@55bafe17]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'playerController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: testPurse,purseServiceImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:128)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: testPurse,purseServiceImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:290)
+	... 41 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] is defined: expected single matching bean but found 2: testPurse,purseServiceImpl
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:974)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:481)
+	... 43 more
+2014-11-28 18:20:46 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:20:46 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:20:46 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@643293ae: startup date [Fri Nov 28 18:20:46 EET 2014]; root of context hierarchy
+2014-11-28 18:20:46 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:20:46 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:20:46 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:20:46 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:20:46 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:20:46 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:20:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:20:47 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:20:47 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:20:47 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:20:47 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:20:48 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:20:48 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:20:48 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:20:48 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:20:48 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 18:20:48 INFO  PlayerController:29 - Ititialize new 'DEFAULT' user in system with balance = 100
+2014-11-28 18:20:48 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@643293ae: startup date [Fri Nov 28 18:20:46 EET 2014]; root of context hierarchy
+2014-11-28 18:20:48 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:20:48 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:20:48 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:22:21 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:22:22 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:22:22 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21acfd6f: startup date [Fri Nov 28 18:22:22 EET 2014]; root of context hierarchy
+2014-11-28 18:22:22 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:22:22 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:22:22 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:22:22 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:22:22 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:22:22 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:22:23 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:22:23 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:22:23 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:22:23 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:22:23 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:22:23 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:22:23 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:22:23 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:22:23 ERROR TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@265fb8ee] to prepare test instance [com.andrew.safronov.sintez.theblackjack.controller.PlayerControllerTest@566624f0]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'playerController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=testPurse)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:128)
+	at org.springframework.test.context.web.AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.andrew.safronov.sintez.theblackjack.service.PurseService com.andrew.safronov.sintez.theblackjack.controller.PlayerController.purseService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=testPurse)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:290)
+	... 41 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.andrew.safronov.sintez.theblackjack.service.PurseService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=testPurse)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:481)
+	... 43 more
+2014-11-28 18:22:59 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:23:00 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:23:00 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@643293ae: startup date [Fri Nov 28 18:23:00 EET 2014]; root of context hierarchy
+2014-11-28 18:23:00 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:23:00 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:23:00 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:23:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:23:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:23:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:23:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:23:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:23:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:23:01 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:23:01 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:23:02 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:23:02 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:23:02 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:23:02 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:23:02 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 18:23:02 INFO  PlayerController:29 - Ititialize new 'DEFAULT' user in system with balance = 100
+2014-11-28 18:23:02 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@643293ae: startup date [Fri Nov 28 18:23:00 EET 2014]; root of context hierarchy
+2014-11-28 18:23:02 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:23:02 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:23:02 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:24:40 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:24:41 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:24:41 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21acfd6f: startup date [Fri Nov 28 18:24:41 EET 2014]; root of context hierarchy
+2014-11-28 18:24:41 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:24:41 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:24:41 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:24:41 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:24:41 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:24:41 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:24:41 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:24:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:24:42 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:24:42 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:24:42 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:24:42 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:24:42 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:24:43 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:24:43 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:24:43 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 18:24:43 INFO  PlayerController:28 - Ititialize new 'DEFAULT' user in system with balance = 100
+2014-11-28 18:24:43 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@21acfd6f: startup date [Fri Nov 28 18:24:41 EET 2014]; root of context hierarchy
+2014-11-28 18:24:43 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:24:43 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:24:43 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:29:03 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:29:04 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:29:04 INFO  GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@6e17fe3f: startup date [Fri Nov 28 18:29:04 EET 2014]; root of context hierarchy
+2014-11-28 18:29:04 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:29:04 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:29:04 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:29:04 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:29:04 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:29:04 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:29:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:29:05 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:29:05 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:29:05 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:29:05 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:29:06 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 18:29:06 INFO  GenericApplicationContext:1042 - Closing org.springframework.context.support.GenericApplicationContext@6e17fe3f: startup date [Fri Nov 28 18:29:04 EET 2014]; root of context hierarchy
+2014-11-28 18:29:06 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:29:06 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:29:06 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:29:57 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:29:58 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:29:58 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6eda0e76: startup date [Fri Nov 28 18:29:58 EET 2014]; root of context hierarchy
+2014-11-28 18:29:58 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:29:58 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:29:58 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:29:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:29:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:29:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:29:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:29:58 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:29:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:29:59 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:29:59 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:29:59 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:29:59 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:30:00 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:30:00 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:30:00 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 18:30:00 INFO  PlayerController:28 - Ititialize new 'DEFAULT' user in system with balance = 100
+2014-11-28 18:30:00 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@6eda0e76: startup date [Fri Nov 28 18:29:58 EET 2014]; root of context hierarchy
+2014-11-28 18:30:00 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:30:00 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:30:00 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:31:25 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:31:25 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:31:25 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@48cb3966: startup date [Fri Nov 28 18:31:25 EET 2014]; root of context hierarchy
+2014-11-28 18:31:25 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:31:25 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:31:25 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:31:26 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:31:26 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:31:26 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:31:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:31:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:31:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:31:26 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:31:26 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:31:27 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:31:27 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:31:27 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:31:27 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:31:27 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 0 ms
+2014-11-28 18:31:27 INFO  PlayerController:28 - Ititialize new 'DEFAULT' user in system with balance = 100
+2014-11-28 18:31:27 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 18:31:27 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@48cb3966: startup date [Fri Nov 28 18:31:25 EET 2014]; root of context hierarchy
+2014-11-28 18:31:27 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:31:27 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:31:27 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:31:56 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-application-context.xml]
+2014-11-28 18:31:57 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [test-spring-JPA.xml]
+2014-11-28 18:31:57 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5d54e317: startup date [Fri Nov 28 18:31:57 EET 2014]; root of context hierarchy
+2014-11-28 18:31:57 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2014-11-28 18:31:57 INFO  LocalContainerEntityManagerFactoryBean:332 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:31:57 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-11-28 18:31:57 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2014-11-28 18:31:57 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2014-11-28 18:31:57 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2014-11-28 18:31:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-11-28 18:31:58 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-11-28 18:31:58 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2014-11-28 18:31:58 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:31:58 INFO  SchemaExport:405 - HHH000230: Schema export complete
+2014-11-28 18:31:59 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerDefaultPlayer()
+2014-11-28 18:31:59 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/initPurse/{balance}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public com.andrew.safronov.sintez.theblackjack.entity.Purse com.andrew.safronov.sintez.theblackjack.controller.PlayerController.registerSpecialPlayer(int)
+2014-11-28 18:31:59 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-11-28 18:31:59 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-11-28 18:31:59 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-11-28 18:31:59 INFO  PlayerController:37 - Ititialize new 'SPECIAL' user in system with balance = 10
+2014-11-28 18:31:59 INFO  PurseServiceImpl:21 - Start to register new purse
+2014-11-28 18:31:59 INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5d54e317: startup date [Fri Nov 28 18:31:57 EET 2014]; root of context hierarchy
+2014-11-28 18:31:59 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-11-28 18:31:59 INFO  SchemaExport:343 - HHH000227: Running hbm2ddl schema export
+2014-11-28 18:31:59 INFO  SchemaExport:405 - HHH000230: Schema export complete

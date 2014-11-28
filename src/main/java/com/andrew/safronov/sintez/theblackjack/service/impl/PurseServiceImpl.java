@@ -19,6 +19,7 @@ public class PurseServiceImpl implements PurseService {
     @Override
     public Purse registerNewPurse(Purse purse) {
         LOGGER.info("Start to register new purse");
+        System.out.println("REPO: "+purseRepository);
         return purseRepository.save(purse);
     }
 

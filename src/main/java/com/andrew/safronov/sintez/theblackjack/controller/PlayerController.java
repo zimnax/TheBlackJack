@@ -2,6 +2,7 @@ package com.andrew.safronov.sintez.theblackjack.controller;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.andrew.safronov.sintez.theblackjack.entity.Purse;
 import com.andrew.safronov.sintez.theblackjack.service.PurseService;
-import com.andrew.safronov.sintez.theblackjack.service.impl.PurseServiceImpl;
 
 @Controller
 @RequestMapping("/initPurse")
@@ -23,20 +23,13 @@ public class PlayerController {
     @Autowired
     private PurseService purseService;
 
-    // PurseService purseService = new PurseServiceImpl();
-
     @RequestMapping(value = "", method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody Purse registerDefaultPlayer() {
         LOGGER.info("Ititialize new 'DEFAULT' user in system with balance = " + DAFAULT_BUDGET_VALUE);
         Purse purse = new Purse();
         purse.setBalance(DAFAULT_BUDGET_VALUE);
 
-        // Purse registerNewPurse = purseService.registerNewPurse(purse);
-
-        Purse registerNewPurse = purseService.DO();
-
-        return registerNewPurse;
-        // return purse;
+        return purseService.registerNewPurse(purse);
     }
 
     @RequestMapping(value = "/{balance}", method = RequestMethod.GET, produces = "application/json")
