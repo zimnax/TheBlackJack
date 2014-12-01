@@ -72,9 +72,4 @@ public class LogsRepositoryTest {
 		Assert.assertEquals(coins, savedLog.getValue(),1);
 	}
 	
-	@Test
-	public void dealCardsActionCheckCard(){
-		
-	}
-
 }

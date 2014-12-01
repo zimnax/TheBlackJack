@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.andrew.safronov.sintez.theblackjack.entity.Purse;
-import com.andrew.safronov.sintez.theblackjack.exception.ExceptionConstants;
 import com.andrew.safronov.sintez.theblackjack.exception.ExceptionInfo;
 import com.andrew.safronov.sintez.theblackjack.exception.PurseNotFoundException;
+import com.andrew.safronov.sintez.theblackjack.exception.constants.ExceptionConstants;
 import com.andrew.safronov.sintez.theblackjack.game.Desk;
 import com.andrew.safronov.sintez.theblackjack.service.GameEngineService;
 import com.andrew.safronov.sintez.theblackjack.service.PurseService;

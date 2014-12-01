@@ -13,140 +13,155 @@ import com.andrew.safronov.sintez.theblackjack.game.enums.GameStatus;
 @Component
 public class GameKernel {
 
-	private static final Logger LOGGER = Logger.getLogger(GameKernel.class);
+    private static final Logger LOGGER = Logger.getLogger(GameKernel.class);
 
-	private static final int THE_BLACK_JACK = 21;
+    private static final int THE_BLACK_JACK = 21;
 
-	private static final int ACE_DIFFERENCE = 10;
+    private static final int ACE_DIFFERENCE = 10;
 
-	private static final int artificialIntelligenceLimit = 17;
+    private static final int artificialIntelligenceLimit = 17;
 
-	public void initFreshCards(Stack<Card> cards) {
-		LOGGER.info("Start to init net cards");
-		for (CardSuits suit : CardSuits.values()) {
-			for (CardRanks rank : CardRanks.values()) {
-				cards.push(new Card(suit, rank));
-			}
-		}
-		Collections.shuffle(cards);
-	}
+    public void initFreshCards(Stack<Card> cards) {
+        LOGGER.info("Start to init net cards");
+        for (CardSuits suit : CardSuits.values()) {
+            for (CardRanks rank : CardRanks.values()) {
+                cards.push(new Card(suit, rank));
+            }
+        }
+        Collections.shuffle(cards);
+    }
 
-	public Desk analyzeCards(Desk desk) {
-		LOGGER.info("Start to analyze cards");
-		int playerPoints = analyzePlayerPoints(desk.getPlayerCards());
-		desk.setPlayerPoints(playerPoints);
-		if (playerPoints == THE_BLACK_JACK) {
-			LOGGER.info("Player has a BLACKJACK ");
-			desk.setGameStatus(GameStatus.WIN.getStatus());
-			desk.setPlayerPoints(playerPoints);
-			return analyzeBlackJackSituation(desk);
-		} else {
-			return analyzeHitAction(desk, playerPoints);
-		}
-	}
+    public Desk hit(Desk desk) {
+        LOGGER.info("Player do HIT action");
+        Card popCard = desk.getCards().pop();
+        desk.getPlayerCards().push(popCard);
+        LOGGER.info("Hit card: " + popCard.getCardRank() + " " + popCard.getCardSuit());
+        return analyzeCards(desk);
+    }
 
-	private Desk analyzeHitAction(Desk desk, int playerPoints) {
-		if (playerPoints > THE_BLACK_JACK) {
-			LOGGER.info("Player points: " + playerPoints);
-			if (desk.getPlayerCards().contains(new Card(CardSuits.HEARTS, CardRanks.ACE))) {
-				LOGGER.info("Dealer contains big ACE. Transform it to small ACE");
-				playerPoints -= ACE_DIFFERENCE;
-				desk.setPlayerPoints(playerPoints);
-				return desk;
-			} else {
-				desk.getDealerCards().push(desk.getHiddenDealerCard());
-				int analyzeDealerPoints = analyzeDealerPoints(desk.getDealerCards());
+    public Desk analyzeCards(Desk desk) {
+        LOGGER.info("Start to analyze Player cards");
+        int playerPoints = countPlayerPoints(desk.getPlayerCards());
+        desk.setPlayerPoints(playerPoints);
+        if (playerPoints == THE_BLACK_JACK) {
+            Desk standDesk = stand(desk);
+            if (standDesk.getDealerPoints() == THE_BLACK_JACK) {
+                standDesk.setGameStatus(GameStatus.DRAW.getStatus());
+                return standDesk;
+            } else {
+                standDesk.setGameStatus(GameStatus.WIN.getStatus());// TODO: blackjack
+                standDesk.getPurse().setBalance(standDesk.getBet() * 2);
+                return standDesk;
+            }
+        } else if (playerPoints > THE_BLACK_JACK) {
+            desk.setGameStatus(GameStatus.LOOSE.getStatus());// TODO: blackjack
+            desk.getPurse().setBalance(desk.getBet() - (desk.getBet() * 2));
+            return desk;
+        } else {
+            desk.setGameStatus(GameStatus.PENDING.getStatus());
+            return desk;
+        }
+    }
 
-				LOGGER.info("Start to subtract balanse");
-				desk.setDealerPoints(analyzeDealerPoints);
-				desk.setGameStatus(GameStatus.LOOSE.getStatus());
-				int bet = desk.getBet();
-				desk.getPurse().setBalance(desk.getPurse().getBalance() - bet);
+    public Desk stand(Desk desk) {
+        LOGGER.info("Player do STAND action");
+        return analyzeStandAction(desk);
+    }
 
-				return desk;
-			}
-		}
-		desk.setPlayerPoints(playerPoints);
-		desk.setGameStatus(GameStatus.PENDING.getStatus());
-		return desk;
-	}
+    private Desk analyzeStandAction(Desk desk) {
+        LOGGER.info("Analyze Stand Action");
+        int playerPoints = countPlayerPoints(desk.getPlayerCards());
 
-	private Desk analyzeBlackJackSituation(Desk desk) {
-		LOGGER.info("Start to analyze PLAYER has a BLACKJACK situation");
-		desk.getDealerCards().push(desk.getHiddenDealerCard());
-		int dealerPoints = analyzeDealerPoints(desk.getDealerCards());
-		desk.setDealerPoints(dealerPoints);
+        desk.getDealerCards().push(desk.getHiddenDealerCard());
+        int dealerPoints = countDealerPoints(desk.getDealerCards());
 
-		if (dealerPoints == THE_BLACK_JACK) {
-			LOGGER.info("Dealer has a BLACKJACK ");
-			desk.setGameStatus(GameStatus.DRAW.getStatus());
-			LOGGER.info("Game result: DRAW");
-			return desk;
-		} else {
-			return dealerLuckyGame(desk, dealerPoints);
-		}
-	}
+        desk.setPlayerPoints(playerPoints);
+        desk.setDealerPoints(dealerPoints);
 
-	public int analyzePlayerPoints(Stack<Card> playerCards) {
-		int playerPoints = 0;
-		for (Card card : playerCards) {
-			playerPoints += card.getCardRank().getValue();
-		}
-		return playerPoints;
-	}
+        if (dealerPoints < artificialIntelligenceLimit) {///////////////////////
+            Desk dealerGame = dealerLuckyGame(desk, dealerPoints);
+            dealerGame.setPlayerPoints(playerPoints);
+//            dealerGame.setDealerPoints(dealerPoints);
+            if (dealerGame.getDealerPoints() > THE_BLACK_JACK) {
+                dealerGame.setGameStatus(GameStatus.WIN.getStatus());
+                dealerGame.getPurse().setBalance(dealerGame.getBet() * 2);
+                return dealerGame;
+            } else if (dealerGame.getDealerPoints() <= THE_BLACK_JACK && dealerPoints > dealerGame.getPlayerPoints()) {
+                dealerGame.setGameStatus(GameStatus.LOOSE.getStatus());
 
-	public int analyzeDealerPoints(Stack<Card> dealerCards) {
-		int dealerPoints = 0;
-		for (Card card : dealerCards) {
-			dealerPoints += card.getCardRank().getValue();
-		}
-		return dealerPoints;
-	}
+                dealerGame.getPurse().setBalance(dealerGame.getPurse().getBalance() - (dealerGame.getBet() * 2));
+                return dealerGame;
+            } else if (dealerGame.getDealerPoints() == dealerGame.getPlayerPoints()) {
+                dealerGame.setGameStatus(GameStatus.DRAW.getStatus());
+                return dealerGame;
+            }
+        } else {
+            return checkPoints(desk);
+        }
+        return desk;
+    }
 
-	public Desk dealerLuckyGame(Desk desk, int dealerPoints) {
-		LOGGER.info("Start dealer lucky game");
+    public Desk dealerLuckyGame(Desk desk, int dealerPoints) {
+        LOGGER.info("Dealer start lucky game");
+        int sumDealerPoints = dealerPoints;
+        while (sumDealerPoints < artificialIntelligenceLimit || dealerPoints == THE_BLACK_JACK) {
+            desk.getDealerCards().push(desk.getCards().pop());
+            sumDealerPoints = countDealerPoints(desk.getDealerCards());
+        }
+        desk.setDealerPoints(sumDealerPoints);
+        return desk;
+    }
 
-		while (dealerPoints < artificialIntelligenceLimit || dealerPoints == THE_BLACK_JACK) {
-			desk.getDealerCards().push(desk.getCards().pop());
-			dealerPoints = analyzeDealerPoints(desk.getDealerCards());
-			LOGGER.info("Dealer points: " + dealerPoints);
-			desk.setDealerPoints(dealerPoints);
-			if (dealerPoints == THE_BLACK_JACK) {
-				LOGGER.info("Dealer has a BLACKJACK ");
-				LOGGER.info("Game result: DRAW");
-				desk.setGameStatus(GameStatus.DRAW.getStatus());
-				return desk;
-			}
-			if (dealerPoints > THE_BLACK_JACK) {
-				LOGGER.info("Dealer points: " + dealerPoints);
-				if (desk.getDealerCards().contains(new Card(CardSuits.HEARTS, CardRanks.ACE))) {
-					LOGGER.info("Dealer contains big ACE. Transform it to small ACE");
-					dealerPoints -= ACE_DIFFERENCE;
-					continue;
-				} else {
-					LOGGER.info("Dealer BUST ");
-					desk.setGameStatus(GameStatus.WIN.getStatus());
-					desk.setDealerPoints(dealerPoints);
-					double wins = desk.getBet() * 2;
-					desk.getPurse().setBalance(wins);
-					return desk;
-				}
-			}
-		}
-		return desk;
-	}
+    public Desk checkPoints(Desk desk) {
+        int playerPoints = countPlayerPoints(desk.getPlayerCards());
+        int dealerPoints = countDealerPoints(desk.getDealerCards());
 
-	public Desk getOneMoreCard(Desk desk) {
-		LOGGER.info("Player do HIT action");
-		System.out.println("PLAYER CARDS AMOUNT: " + desk.getPlayerCards().size());
-		Card popCard = desk.getCards().pop();
-		desk.getPlayerCards().push(popCard);
-		LOGGER.info("Hit card: " + popCard.getCardRank() + " " + popCard.getCardSuit());
-		return analyzeCards(desk);
-	}
+        desk.setDealerPoints(dealerPoints);
+        desk.setPlayerPoints(playerPoints);
 
-	public Desk stand(Desk desk) {
-		LOGGER.info("Playre do STAND action");
-		return analyzeCards(desk);
-	}
+        if (dealerPoints > playerPoints && dealerPoints <= THE_BLACK_JACK) {
+            desk.setGameStatus(GameStatus.LOOSE.getStatus());
+            desk.getPurse().setBalance(desk.getPurse().getBalance() - (desk.getBet() * 2));
+            desk.setDealerPoints(dealerPoints);
+            return desk;
+        } else if (playerPoints > dealerPoints && playerPoints <= THE_BLACK_JACK) {
+            desk.setGameStatus(GameStatus.WIN.getStatus());
+            desk.getPurse().setBalance(desk.getPurse().getBalance() * 2);
+            return desk;
+        } else {
+            desk.setGameStatus(GameStatus.DRAW.getStatus());
+            return desk;
+        }
+    }
+
+    public int countPlayerPoints(Stack<Card> playerCards) {
+        int playerPoints = 0;
+        for (Card card : playerCards) {
+            playerPoints += card.getCardRank().getValue();
+        }
+        if (playerPoints > THE_BLACK_JACK && playerCards.contains(new Card(CardSuits.HEARTS, CardRanks.ACE))) {
+            LOGGER.info("Dealer contains big ACE. Transform it to small ACE");
+            playerPoints -= ACE_DIFFERENCE;
+            LOGGER.info("Count dealer points. TOTAL: " + playerPoints);
+            return playerPoints;
+        }
+        LOGGER.info("Count player points. TOTAL: " + playerPoints);
+        return playerPoints;
+    }
+
+    public int countDealerPoints(Stack<Card> dealerCards) {
+        int dealerPoints = 0;
+        for (Card card : dealerCards) {
+            dealerPoints += card.getCardRank().getValue();
+        }
+        if (dealerPoints > THE_BLACK_JACK && dealerCards.contains(new Card(CardSuits.HEARTS, CardRanks.ACE))) {
+            LOGGER.info("Dealer contains big ACE. Transform it to small ACE");
+            dealerPoints -= ACE_DIFFERENCE;
+            LOGGER.info("Count dealer points. TOTAL: " + dealerPoints);
+            return dealerPoints;
+        }
+        LOGGER.info("Count dealer points. TOTAL: " + dealerPoints);
+        return dealerPoints;
+    }
+
 }
