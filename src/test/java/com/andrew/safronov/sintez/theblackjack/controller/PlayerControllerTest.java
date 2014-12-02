@@ -1,9 +1,5 @@
 package com.andrew.safronov.sintez.theblackjack.controller;
 
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.isA;
-import static org.mockito.Matchers.eq;
-import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -14,8 +10,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.ApplicationContext;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -26,39 +20,125 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.andrew.safronov.sintez.theblackjack.entity.Purse;
-import com.andrew.safronov.sintez.theblackjack.repository.PurseRepository;
+import com.andrew.safronov.sintez.theblackjack.exception.ExceptionConstants;
 import com.andrew.safronov.sintez.theblackjack.service.PurseService;
-import com.andrew.safronov.sintez.theblackjack.service.impl.PurseServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:test-application-context.xml")
 @WebAppConfiguration
 public class PlayerControllerTest {
 
-    @Autowired
-    private PurseService purseService;
+	private static final double DAFAULT_BUDGET_VALUE = 100;
 
-    @Autowired
-    PlayerController instance;
+	@Autowired
+	private PurseService purseService;
 
-    @Before
-    public void setup() {
-        MockitoAnnotations.initMocks(this);
-        mockMvc = MockMvcBuilders.standaloneSetup(instance).build();
-    }
+	@Autowired
+	private PlayerController playerControllerInstance;
 
-    public MockMvc mockMvc;
+	private MockMvc mockMvcPlayerController;
 
-    @Test
-    public void registerDefaultPlayer() throws Exception {
+	@Before
+	public void setup() {
+		MockitoAnnotations.initMocks(this);
+		mockMvcPlayerController = MockMvcBuilders.standaloneSetup(playerControllerInstance).build();
+	}
 
-        MockHttpServletRequestBuilder getRequest = get("/initPurse/10").accept(MediaType.ALL);
-        ResultActions results = mockMvc.perform(getRequest);
+	@Test
+	public void registerDefaultPlayerStatusIsOk() throws Exception {
 
-        results.andExpect(status().isOk());
-        results.andExpect(content().contentType(MediaType.APPLICATION_JSON));
-        results.andExpect(jsonPath("$.balance").value(10));
-    }
+		MockHttpServletRequestBuilder initPlayerResult = get("/purse/initDefaultPlayer").accept(MediaType.ALL);
+		ResultActions results = mockMvcPlayerController.perform(initPlayerResult);
+
+		results.andExpect(status().isOk());
+	}
+
+	@Test
+	public void registerDefaultPlayerReturnJSON() throws Exception {
+
+		MockHttpServletRequestBuilder initPlayerResult = get("/purse/initDefaultPlayer").accept(MediaType.ALL);
+		ResultActions results = mockMvcPlayerController.perform(initPlayerResult);
+
+		results.andExpect(content().contentType(MediaType.APPLICATION_JSON));
+	}
+
+	@Test
+	public void registerDefaultPlayerCheckBalance() throws Exception {
+
+		MockHttpServletRequestBuilder initPlayerResult = get("/purse/initDefaultPlayer").accept(MediaType.ALL);
+		ResultActions results = mockMvcPlayerController.perform(initPlayerResult);
+
+		results.andExpect(jsonPath("$.purse.balance").value(DAFAULT_BUDGET_VALUE));
+	}
+
+	@Test
+	public void registerSpecialPlayerStatusIsOk() throws Exception {
+
+		MockHttpServletRequestBuilder initPlayerResult = get("/purse/initSpecialPlayer/888").accept(MediaType.ALL);
+		ResultActions results = mockMvcPlayerController.perform(initPlayerResult);
+
+		results.andExpect(status().isOk());
+	}
+
+	@Test
+	public void registerSpecialPlayerReturnJSON() throws Exception {
+
+		MockHttpServletRequestBuilder initPlayerResult = get("/purse/initSpecialPlayer/888").accept(MediaType.ALL);
+		ResultActions results = mockMvcPlayerController.perform(initPlayerResult);
+
+		results.andExpect(content().contentType(MediaType.APPLICATION_JSON));
+	}
+
+	@Test
+	public void registerSpecialPlayerCheckBalance() throws Exception {
+		String randomSum = "888";
+
+		MockHttpServletRequestBuilder initPlayerResult = get("/purse/initSpecialPlayer/" + randomSum).accept(
+				MediaType.ALL);
+		ResultActions results = mockMvcPlayerController.perform(initPlayerResult);
+
+		results.andExpect(jsonPath("$.purse.balance").value(Double.parseDouble(randomSum)));
+	}
+
+	// @Test
+	// public void registerSpecialPlayerCheckActionLog() throws Exception {
+	// String randomSum = "888";
+	//
+	// MockHttpServletRequestBuilder initPlayerResult =
+	// get("/purse/initSpecialPlayer/" + randomSum).accept(
+	// MediaType.ALL);
+	// ResultActions results =
+	// mockMvcPlayerController.perform(initPlayerResult);
+	//
+	// results.andExpect(jsonPath("$.purse.game.gameLogs[0].action").value(GameActions.START_GAME.getAction()));
+	// }
+
+//	@Test
+//	public void replenishPurseSucess() throws Exception {
+//
+//		get("/purse/initDefaultPlayer").accept(MediaType.ALL);
+//		String firsDatabaseID = "1";
+//		String replenishCoinsValue = "900";
+//
+//		MockHttpServletRequestBuilder replenishPurseResult = get(
+//				"/purse/replenish/" + firsDatabaseID + "/" + replenishCoinsValue).accept(MediaType.ALL);
+//		ResultActions results = mockMvcPlayerController.perform(replenishPurseResult);
+//
+//		results.andExpect(jsonPath("$.purse.balance").value(1000));
+//	}
+
+	@Test
+	public void replenishPurseFail() throws Exception {
+
+		get("/purse/initDefaultPlayer").accept(MediaType.ALL);
+		String unexistingDatabaseID = "976";
+		String replenishCoinsValue = "800";
+
+		MockHttpServletRequestBuilder replenishPurseResult = get(
+				"/purse/replenish/" + unexistingDatabaseID + "/" + replenishCoinsValue).accept(MediaType.ALL);
+		ResultActions results = mockMvcPlayerController.perform(replenishPurseResult);
+
+		results.andExpect(jsonPath("$.ex").value(ExceptionConstants.PURSE_NOT_FOUND_EXCEPTION));
+	}
 
 }
