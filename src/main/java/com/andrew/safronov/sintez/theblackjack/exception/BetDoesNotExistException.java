@@ -8,16 +8,8 @@ public class BetDoesNotExistException extends BlackjackGameException {
 		super();
 	}
 
-	public BetDoesNotExistException(String message, Throwable cause) {
-		super(message, cause);
-	}
-
 	public BetDoesNotExistException(String message) {
 		super(message);
-	}
-
-	public BetDoesNotExistException(Throwable cause) {
-		super(cause);
 	}
 
 }

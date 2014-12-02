@@ -8,16 +8,8 @@ public class PurseNotFoundException extends BlackjackGameException {
 		super();
 	}
 
-	public PurseNotFoundException(String message, Throwable cause) {
-		super(message, cause);
-	}
-
 	public PurseNotFoundException(String message) {
 		super(message);
-	}
-
-	public PurseNotFoundException(Throwable cause) {
-		super(cause);
 	}
 
 }

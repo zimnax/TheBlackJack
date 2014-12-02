@@ -22,6 +22,9 @@ public class PurseServiceImpl implements PurseService {
 	@Autowired
 	private GameLogsSaverImpl gameLogsSaver;
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Desk registerNewPurse(Purse purse) {
 		LOGGER.info("Start to register new purse");
@@ -34,6 +37,9 @@ public class PurseServiceImpl implements PurseService {
 		return desk;
 	}
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Desk replenishPurse(long purseID, double coins) {
 		LOGGER.info("Start to replenish existing purse");
@@ -49,11 +55,15 @@ public class PurseServiceImpl implements PurseService {
 		return desk;
 	}
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public boolean isPurseExist(long purseID) {
 		LOGGER.info("Check is purse exist");
 		return purseRepository.exists(purseID);
 	}
+
 
 	private Purse initPurseByDefaultGame(Purse purse) {
 		LOGGER.info("Start to init purse. Adding game");
