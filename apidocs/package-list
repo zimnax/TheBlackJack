@@ -1,0 +1,10 @@
+com.andrew.safronov.sintez.theblackjack.controller
+com.andrew.safronov.sintez.theblackjack.entity
+com.andrew.safronov.sintez.theblackjack.exception
+com.andrew.safronov.sintez.theblackjack.exception.constants
+com.andrew.safronov.sintez.theblackjack.game
+com.andrew.safronov.sintez.theblackjack.game.enums
+com.andrew.safronov.sintez.theblackjack.repository
+com.andrew.safronov.sintez.theblackjack.service
+com.andrew.safronov.sintez.theblackjack.service.impl
+com.andrew.safronov.sintez.theblackjack.webserver
