@@ -5,10 +5,14 @@ Technologies:
 
  = Spring MVC
  = Spring Data JPA
- = Spring Test 
  = Hibernate
  = PostgreSQL
  = Jetty
+ 
+ Testing:
+  = Spring Test
+  = JUnit
+  = H2 in memory database
  
 To start the application you need:
 
