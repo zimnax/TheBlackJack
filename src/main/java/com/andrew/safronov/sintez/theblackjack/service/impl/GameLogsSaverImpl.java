@@ -23,6 +23,9 @@ public class GameLogsSaverImpl implements GameLogsSaver {
 	@Autowired
 	private LogsRepository logsRepository;
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Logs saveBetAction(Purse purse, int bet) {
 		LOGGER.info("Save BET action for purse: " + purse.getPurseId());
@@ -34,6 +37,9 @@ public class GameLogsSaverImpl implements GameLogsSaver {
 		return betGameLog;
 	}
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Logs saveStartGameAction(Game game) {
 		LOGGER.info("Save START_GAME action");
@@ -45,6 +51,9 @@ public class GameLogsSaverImpl implements GameLogsSaver {
 		return startGameLog;
 	}
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Logs saveReplenishAction(Purse currentPurse, double coins) {
 		LOGGER.info("Save REPLENISH action for purse: " + currentPurse.getPurseId());
@@ -57,6 +66,9 @@ public class GameLogsSaverImpl implements GameLogsSaver {
 		return replenishLog;
 	}
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Logs saveDealCardsAction(Desk desk, GameParticipants participant) {
 		LOGGER.info("Save DEAL_CARD action for purse: " + desk.getPurse().getPurseId());
@@ -76,6 +88,9 @@ public class GameLogsSaverImpl implements GameLogsSaver {
 		return dealCardLog;
 	}
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Logs saveHitAction(Desk desk, GameParticipants participant) {
 		LOGGER.info("Save HIT action for purse: " + desk.getPurse().getPurseId());
@@ -95,6 +110,9 @@ public class GameLogsSaverImpl implements GameLogsSaver {
 		return hitLog;
 	}
 
+	/*
+	 * {@inheritDoc}
+	 */
 	@Override
 	public Logs saveStandAction(Desk desk) {
 		LOGGER.info("Save STAND action for purse: " + desk.getPurse().getPurseId());

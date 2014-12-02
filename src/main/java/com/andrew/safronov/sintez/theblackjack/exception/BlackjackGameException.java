@@ -8,16 +8,8 @@ public class BlackjackGameException extends RuntimeException {
 		super();
 	}
 
-	public BlackjackGameException(String message, Throwable cause) {
-		super(message, cause);
-	}
-
 	public BlackjackGameException(String message) {
 		super(message);
-	}
-
-	public BlackjackGameException(Throwable cause) {
-		super(cause);
 	}
 
 }

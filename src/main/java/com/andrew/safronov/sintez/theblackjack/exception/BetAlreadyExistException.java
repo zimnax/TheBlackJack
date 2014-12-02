@@ -8,16 +8,8 @@ public class BetAlreadyExistException extends BlackjackGameException {
 		super();
 	}
 
-	public BetAlreadyExistException(String message, Throwable cause) {
-		super(message, cause);
-	}
-
 	public BetAlreadyExistException(String message) {
 		super(message);
-	}
-
-	public BetAlreadyExistException(Throwable cause) {
-		super(cause);
 	}
 
 }

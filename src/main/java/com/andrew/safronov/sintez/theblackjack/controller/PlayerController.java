@@ -34,9 +34,12 @@ public class PlayerController {
 	private GameEngineService gameEngineService;
 
 	/**
+	 * This method responsible for the {@link URI} /purse/initDefaultPlayer
+	 * request
+	 * <p>
+	 * {@link RequestMethod.GET}
 	 * 
-	 * 
-	 * @return
+	 * @return {@link Desk}
 	 */
 	@RequestMapping(value = "/initDefaultPlayer", method = RequestMethod.GET, produces = "application/json")
 	public @ResponseBody Desk registerDefaultPlayer() {
@@ -46,6 +49,16 @@ public class PlayerController {
 		return purseService.registerNewPurse(purse);
 	}
 
+	/**
+	 * This method responsible for the {@link URI}
+	 * /purse/initSpecialPlayer/{balance} request
+	 * <p>
+	 * {@link RequestMethod.GET}
+	 * 
+	 * @param balance
+	 *            {@link int}
+	 * @return {@link Desk}
+	 */
 	@RequestMapping(value = "/initSpecialPlayer/{balance}", method = RequestMethod.GET, produces = "application/json")
 	public @ResponseBody Desk registerSpecialPlayer(@PathVariable int balance) {
 		LOGGER.info("Ititialize new 'SPECIAL' user in system with balance = " + balance);
@@ -54,6 +67,17 @@ public class PlayerController {
 		return purseService.registerNewPurse(purse);
 	}
 
+	/**
+	 * This method responsible for the {@link URI}
+	 * /purse/replenish/{purseID}/{coints} request
+	 * 
+	 * @param purseID
+	 *            {@link long}
+	 * @param coints
+	 *            {@link int}
+	 * 
+	 * @return {@link Desk}
+	 */
 	@RequestMapping(value = "/replenish/{purseID}/{coints}", method = RequestMethod.GET, produces = "application/json")
 	public @ResponseBody Desk replenishPurse(@PathVariable long purseID, @PathVariable int coints) {
 		if (purseService.isPurseExist(purseID)) {

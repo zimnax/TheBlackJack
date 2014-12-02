@@ -8,16 +8,8 @@ public class CardsAlreadyDealtException extends BlackjackGameException {
 		super();
 	}
 
-	public CardsAlreadyDealtException(String message, Throwable cause) {
-		super(message, cause);
-	}
-
 	public CardsAlreadyDealtException(String message) {
 		super(message);
-	}
-
-	public CardsAlreadyDealtException(Throwable cause) {
-		super(cause);
 	}
 
 }
